@@ -1,8 +1,3 @@
-import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  LockClosedIcon,
-} from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 
 const variants = {

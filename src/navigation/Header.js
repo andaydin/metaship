@@ -4,8 +4,8 @@ import React, { useEffect, useState } from "react";
 const navigation = [
   { name: "Metaship", href: "/metaship" },
   { name: "Product", href: "/product" },
-  { name: "Docs", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Docs", href: "/" },
+  { name: "Company", href: "/" },
 ];
 
 const variants = {

@@ -1,10 +1,7 @@
 import {
   ArrowPathIcon,
   CloudArrowUpIcon,
-  CogIcon,
   LockClosedIcon,
-  ServerIcon,
-  ShieldCheckIcon,
 } from "@heroicons/react/24/outline";
 
 const features = [
