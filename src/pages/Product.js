@@ -3,6 +3,7 @@ import {
   CloudArrowUpIcon,
   LockClosedIcon,
 } from "@heroicons/react/24/outline";
+import { motion } from "framer-motion";
 
 const features = [
   {
@@ -25,9 +26,22 @@ const features = [
   },
 ];
 
+const variants = {
+  hidden: { opacity: 0, x: 0, y: 100 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: 0 },
+};
+
 export default function Product() {
   return (
-    <>
+    <motion.div
+      variants={variants} // Pass the variant object into Framer Motion
+      initial="hidden" // Set the initial state to variants.hidden
+      animate="enter" // Animated state to variants.enter
+      exit="exit" // Exit state (used later) to variants.exit
+      transition={{ type: "linear", duration: 0.7 }} // Set the transition to linear
+      className=""
+    >
       <div className="relative bg-indigo-800">
         <div className="absolute inset-0">
           <img
@@ -50,6 +64,55 @@ export default function Product() {
             competence, and more than that it gives you the courage to make
             mistakes.
           </p>
+        </div>
+      </div>
+
+      <div className="bg-zinc-900 pt-12 sm:pt-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl">
+              Trusted by developers from over 80 planets
+            </h2>
+            <p className="mt-3 text-xl text-gray-500 sm:mt-4">
+              MetaSHIP platform covers digital vessels, ports, shipyards and
+              waterways.
+            </p>
+          </div>
+        </div>
+        <div className="mt-10 bg-zinc-900 pb-12 sm:pb-16">
+          <div className="relative">
+            <div className="absolute inset-0 h-1/2 bg-zinc-900" />
+            <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="mx-auto max-w-4xl">
+                <dl className="sm:grid sm:grid-cols-3">
+                  <div className="flex bg-zinc-800 mx-5 my-3 flex-col border-b border-gray-800 p-6 text-center sm:border-0 sm:border-r shadow-lg rounded-lg">
+                    <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-300">
+                      Days Playtime
+                    </dt>
+                    <dd className="order-1 text-5xl font-bold tracking-tight text-blue-600">
+                      100+
+                    </dd>
+                  </div>
+                  <div className="flex bg-zinc-800  mx-5 my-3 flex-col border-t border-b border-gray-800 p-6 text-center sm:border-0 sm:border-l sm:border-r shadow-lg rounded-lg">
+                    <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-300">
+                      Miles Navigation
+                    </dt>
+                    <dd className="order-1 text-5xl font-bold tracking-tight text-blue-600">
+                      30.000+
+                    </dd>
+                  </div>
+                  <div className="flex bg-zinc-800  mx-5 my-3 flex-col border-t border-gray-800 p-6 text-center sm:border-0 sm:border-l shadow-lg rounded-lg">
+                    <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-300">
+                      Customers
+                    </dt>
+                    <dd className="order-1 text-5xl font-bold tracking-tight text-blue-600">
+                      100+
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -123,6 +186,6 @@ export default function Product() {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }

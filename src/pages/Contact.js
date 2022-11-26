@@ -285,17 +285,17 @@ export default function Contact() {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-blue-600">
+        <div className="bg-zinc-200">
           <div className="mx-auto max-w-md py-16 px-4 text-center sm:max-w-2xl sm:py-24 sm:px-6 lg:px-8 lg:py-32">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              <span className="block text-white">
+              <span className="block text-zinc-700">
                 Looking for a new career?
               </span>
               <span className="block mt-2 text-blue-800">We’re hiring.</span>
             </h2>
             <a
               href="#"
-              className="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white hover:bg-blue-500 hover:text-white transition-all duration-400 py-3 px-5 text-base font-medium text-grape-100 shadow-md hover:bg-grape-50 sm:w-auto"
+              className="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white hover:bg-blue-800 hover:text-white transition-all duration-400 py-3 px-5 text-base font-medium text-grape-100 shadow-md hover:bg-grape-50 sm:w-auto"
             >
               <span>See open positions</span>
               <ArrowTopRightOnSquareIcon
