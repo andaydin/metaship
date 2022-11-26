@@ -4,8 +4,8 @@ import React, { useEffect, useState } from "react";
 const navigation = [
   { name: "Metaship", href: "/metaship" },
   { name: "Product", href: "/product" },
-  { name: "Docs", href: "/" },
   { name: "Company", href: "/" },
+  { name: "About", href: "/" },
 ];
 
 const variants = {
@@ -53,12 +53,12 @@ const Header = () => {
                   alt=""
                 />
               </a>
-              <div className="ml-10 hidden space-x-8 lg:block">
+              <div className="ml-10 hidden space-x-5 lg:block">
                 {navigation.map((link) => (
                   <a
                     key={link.name}
                     href={link.href}
-                    className="text-base font-medium text-white hover:text-indigo-50"
+                    className="text-base font-medium text-white hover:text-indigo-50 hover:bg-blue-500 rounded-md py-2 px-3 transition-all duration-500 drop-shadow-lg"
                   >
                     {link.name}
                   </a>
