@@ -34,15 +34,15 @@ export default function Product() {
           exit="exit"
           transition={{ type: "linear", duration: 1 }} // Set the transition to linear
         >
-          <div className="relative mx-auto max-w-8xl pt-14 pb-32 px-4 sm:pt-72 sm:px-6 lg:px-8">
-            <h1 className="mt-60 text-4xl text-center font-bold tracking-normal text-white sm:text-5xl lg:text-6xl uppercase">
+          <div className="h-screen relative mx-auto max-w-8xl pt-14 pb-32 px-4 sm:pt-72 sm:px-6 lg:px-8">
+            <h1 className="absolute bottom-10 text-2xl m-auto lg:text-4xl text-center font-bold tracking-normal text-white sm:text-5xl lg:text-6xl uppercase">
               Revolutionizing Reality
             </h1>
           </div>
         </motion.div>
       </div>
 
-      <div className="flex overflow-hidden bg-zinc-900">
+      <div className="block lg:flex overflow-hidden bg-zinc-900">
         <div className="mx-auto max-w-8xl">
           <div className="relative z-10 bg-zinc-900 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
             <main className="mx-auto mt-10 max-w-8xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
@@ -115,23 +115,23 @@ export default function Product() {
         </div>
         <div className="lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
-            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
+            className="h-full lg:h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
             src="https://orkainformatics.com/assets/images/page-images/metaship/metaship-platform/why.png"
             alt=""
           />
         </div>
       </div>
 
-      <div className="flex overflow-hidden bg-zinc-900">
+      <div className="flex flex-col-reverse lg:flex overflow-hidden bg-zinc-900">
         <div className="lg:inset-y-0 lg:left-0 lg:w-1/2">
           <img
-            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
+            className="h-full lg:h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
             src="https://orkainformatics.com/assets/images/page-images/metaship/metaship-platform/how.png"
             alt=""
           />
         </div>
 
-        <div className="flex items-center m-auto justify-center my-5">
+        <div className="flex p-2 items-center m-auto justify-center my-5">
           <div className="relative max-w-8xl z-10 bg-zinc-900 pb-8 ml-auto mr-0 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
             <main className="mx-auto mt-10 max-w-8xl sm:mt-12  md:mt-16 lg:mt-20  xl:mt-28">
               <div className="sm:text-center lg:text-left">

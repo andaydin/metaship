@@ -86,7 +86,7 @@ function classNames(...classes) {
 }
 
 const variants = {
-  hidden: { opacity: 0, x: 0, y: -200, delay: 1 },
+  hidden: { opacity: 0, x: 0, y: -300, delay: 1 },
   enter: { opacity: 1, x: 0, y: 0, delay: 1 },
   exit: { opacity: 0, x: 0, y: 0, delay: 1 },
 };
@@ -118,7 +118,7 @@ const Header = () => {
       >
         <div className="flex items-center justify-between px-4 py-2 sm:px-6 md:justify-start md:space-x-10">
           <div>
-            <a href="#" className="flex">
+            <a href="/" className="flex">
               <span className="sr-only">Your Company</span>
               <img
                 className="h-14 w-auto sm:h-10"
@@ -128,7 +128,7 @@ const Header = () => {
             </a>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -157,7 +157,7 @@ const Header = () => {
                     <Popover.Button
                       className={classNames(
                         open ? "text-gray-900" : "text-white",
-                        "group inline-flex items-center rounded-md bg-transparent text-base font-medium  focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                        "group inline-flex items-center rounded-md bg-transparent text-base font-medium  focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                       )}
                     >
                       <span>More</span>
@@ -207,7 +207,7 @@ const Header = () => {
             <div className="flex items-center md:ml-12">
               <a
                 href="/contact"
-                className="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                className="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700"
               >
                 Contact
               </a>
@@ -226,20 +226,20 @@ const Header = () => {
         >
           <Popover.Panel
             focus
-            className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
+            className="absolute inset-x-0 h-screen top-0 origin-top-right transform transition md:hidden"
           >
-            <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+            <div className="divide-y-2 divide-gray-50  bg-zinc-900 shadow-lg ring-1 ring-black ring-opacity-5">
               <div className="px-5 pt-5 pb-6">
                 <div className="flex items-center justify-between">
                   <div>
                     <img
-                      className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                      className="h-14 w-auto"
+                      src="https://orkainformatics.com/assets/images/logo-white.png"
                       alt="Your Company"
                     />
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                       <span className="sr-only">Close menu</span>
                       <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
@@ -253,10 +253,10 @@ const Header = () => {
                         href={item.href}
                         className="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50"
                       >
-                        <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white">
+                        <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-blue-500 text-white">
                           <item.icon className="h-6 w-6" aria-hidden="true" />
                         </div>
-                        <div className="ml-4 text-base font-medium text-gray-900">
+                        <div className="ml-4 text-base font-medium text-white">
                           {item.name}
                         </div>
                       </a>
@@ -268,21 +268,21 @@ const Header = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <a
                     href="#"
-                    className="text-base font-medium text-gray-900 hover:text-gray-700"
+                    className="text-base font-medium text-white hover:text-gray-700"
                   >
                     Pricing
                   </a>
 
                   <a
                     href="#"
-                    className="text-base font-medium text-gray-900 hover:text-gray-700"
+                    className="text-base font-medium text-white hover:text-gray-700"
                   >
                     Docs
                   </a>
 
                   <a
                     href="#"
-                    className="text-base font-medium text-gray-900 hover:text-gray-700"
+                    className="text-base font-medium text-white hover:text-gray-700"
                   >
                     Enterprise
                   </a>
@@ -290,7 +290,7 @@ const Header = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-base font-medium text-gray-900 hover:text-gray-700"
+                      className="text-base font-medium text-white hover:text-gray-700"
                     >
                       {item.name}
                     </a>
@@ -299,16 +299,13 @@ const Header = () => {
                 <div className="mt-6">
                   <a
                     href="#"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700"
                   >
                     Sign up
                   </a>
                   <p className="mt-6 text-center text-base font-medium text-gray-500">
                     Existing customer?{" "}
-                    <a
-                      href="#"
-                      className="text-indigo-600 hover:text-indigo-500"
-                    >
+                    <a href="#" className="text-blue-600 hover:text-blue-500">
                       Sign in
                     </a>
                   </p>
