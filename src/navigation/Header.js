@@ -108,7 +108,7 @@ const Header = () => {
       initial="hidden"
       animate="enter"
       exit="exit"
-      transition={{ type: "linear", duration: 0.7 }} // Set the transition to linear
+      transition={{ type: "linear", duration: 1 }} // Set the transition to linear
       className="z-50 sticky top-0"
     >
       <Popover

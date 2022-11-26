@@ -27,7 +27,7 @@ const features = [
 ];
 
 const variants = {
-  hidden: { opacity: 0, x: 0, y: 100 },
+  hidden: { opacity: 0, x: 0, y: 300 },
   enter: { opacity: 1, x: 0, y: 0 },
   exit: { opacity: 0, x: 0, y: 0 },
 };
@@ -39,7 +39,7 @@ export default function Product() {
       initial="hidden" // Set the initial state to variants.hidden
       animate="enter" // Animated state to variants.enter
       exit="exit" // Exit state (used later) to variants.exit
-      transition={{ type: "linear", duration: 0.7 }} // Set the transition to linear
+      transition={{ type: "linear", duration: 1 }} // Set the transition to linear
       className=""
     >
       <div className="relative bg-indigo-800">
