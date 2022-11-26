@@ -35,7 +35,7 @@ export default function Product() {
           transition={{ type: "linear", duration: 1 }} // Set the transition to linear
         >
           <div className="h-screen relative mx-auto max-w-8xl pt-14 pb-32 px-4 sm:pt-72 sm:px-6 lg:px-8">
-            <h1 className="absolute bottom-10 text-2xl m-auto lg:text-4xl text-center font-bold tracking-normal text-white sm:text-5xl lg:text-6xl uppercase">
+            <h1 className="absolute lg:mt-60 sm:mt-5 bottom-10  text-2xl lg:text-6xl text-center font-bold tracking-normal text-white sm:text-5xl lg:text-6xl uppercase">
               Revolutionizing Reality
             </h1>
           </div>
@@ -115,17 +115,17 @@ export default function Product() {
         </div>
         <div className="lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
-            className="h-full lg:h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
+            className="h-full w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
             src="https://orkainformatics.com/assets/images/page-images/metaship/metaship-platform/why.png"
             alt=""
           />
         </div>
       </div>
 
-      <div className="flex flex-col-reverse lg:flex overflow-hidden bg-zinc-900">
+      <div className="flex flex-col-reverse lg:flex-row lg:flex overflow-hidden bg-zinc-900">
         <div className="lg:inset-y-0 lg:left-0 lg:w-1/2">
           <img
-            className="h-full lg:h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
             src="https://orkainformatics.com/assets/images/page-images/metaship/metaship-platform/how.png"
             alt=""
           />

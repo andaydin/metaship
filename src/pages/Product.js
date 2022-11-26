@@ -55,10 +55,10 @@ export default function Product() {
           />
         </div>
         <div className="relative mx-auto max-w-8xl py-40 px-4 sm:py-60 sm:px-6 lg:px-8">
-          <h1 className="mt-60 text-4xl text-right font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="mt-60 text-2xl lg:text-4xl text-right font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             Product Replacement
           </h1>
-          <p className="mt-6 ml-auto mr-0 text-right max-w-3xl text-xl text-indigo-100">
+          <p className="mt-6 ml-auto mr-0 text-right max-w-3xl text-md lg:text-xl text-indigo-100">
             You want to learn, understand and experience the complex systems of
             life and operations onboard. MetaShip gives you responsibility, and
             competence, and more than that it gives you the courage to make
