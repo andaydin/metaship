@@ -116,7 +116,7 @@ const Header = () => {
           small ? "bg-zinc-900" : "bg-transparent"
         } absolute w-full z-50 transition-all duration-500`}
       >
-        <div className="flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
+        <div className="flex items-center justify-between px-4 py-2 sm:px-6 md:justify-start md:space-x-10">
           <div>
             <a href="#" className="flex">
               <span className="sr-only">Your Company</span>
