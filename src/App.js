@@ -4,6 +4,7 @@ import Footer from "./navigation/Footer";
 import Homepage from "./pages/Homepage";
 import Product from "./pages/Product";
 import MetaShip from "./pages/MetaShip";
+import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/metaship" element={<MetaShip />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<AboutUs />} />
         <Route path="/product" element={<Product />} />
       </Routes>
 

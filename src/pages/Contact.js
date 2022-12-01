@@ -1,37 +1,11 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  const colors = require('tailwindcss/colors')
-  
-  module.exports = {
-    // ...
-    theme: {
-      extend: {
-        colors: {
-          grape: colors.purple,
-        },
-      },
-    },
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
-import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
 
 export default function Contact() {
   return (
-    <div className="bg-zinc-900">
+    <div className="bg-neutral-900">
       <main>
         {/* Header */}
-        <div className="bg-zinc-900 py-24 sm:py-32">
+        <div className="bg-neutral-900 py-24 sm:py-32">
           <div className="mx-auto max-w-md pl-4 pr-8 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:px-8">
             <h1 className="text-center text-4xl font-bold leading-10 tracking-tight text-gray-300 sm:text-5xl sm:leading-none lg:text-6xl">
               Get in touch
@@ -45,13 +19,17 @@ export default function Contact() {
         </div>
 
         {/* Contact Section */}
-        <div className="relative bg-zinc-900">
+        <div className="relative bg-neutral-900">
           <div className="lg:absolute lg:inset-0">
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
               <img
                 className="h-56 w-full object-cover lg:absolute lg:h-full"
                 src="https://orkainformatics.com/assets/images/page-images/company/recognition/banner.png"
                 alt=""
+              />
+              <div
+                className="absolute inset-0 bg-neutral-400 mix-blend-multiply"
+                aria-hidden="true"
               />
             </div>
           </div>
@@ -84,7 +62,7 @@ export default function Contact() {
                         name="first-name"
                         id="first-name"
                         autoComplete="given-name"
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-grape-500 focus:ring-grape-500 sm:text-sm bg-zinc-600 p-2 text-white"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-grape-500 focus:ring-grape-500 sm:text-sm bg-neutral-800 p-2 text-white shadow-xl"
                       />
                     </div>
                   </div>
@@ -101,7 +79,7 @@ export default function Contact() {
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-grape-500 focus:ring-grape-500 sm:text-sm bg-zinc-600 p-2 text-white"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-grape-500 focus:ring-grape-500 sm:text-sm bg-neutral-800 p-2 text-white shadow-xl"
                       />
                     </div>
                   </div>
@@ -118,7 +96,7 @@ export default function Contact() {
                         name="email"
                         type="email"
                         autoComplete="email"
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-grape-500 focus:ring-grape-500 sm:text-sm bg-zinc-600 p-2 text-white"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-grape-500 focus:ring-grape-500 sm:text-sm bg-neutral-800 p-2 text-white shadow-xl"
                       />
                     </div>
                   </div>
@@ -135,7 +113,7 @@ export default function Contact() {
                         name="company"
                         id="company"
                         autoComplete="organization"
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-grape-500 focus:ring-grape-500 sm:text-sm bg-zinc-600 p-2 text-white"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-grape-500 focus:ring-grape-500 sm:text-sm bg-neutral-800 p-2 text-white shadow-xl"
                       />
                     </div>
                   </div>
@@ -161,7 +139,7 @@ export default function Contact() {
                         id="phone"
                         autoComplete="tel"
                         aria-describedby="phone-description"
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-grape-500 focus:ring-grape-500 sm:text-sm bg-zinc-600 p-2 text-white"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-grape-500 focus:ring-grape-500 sm:text-sm bg-neutral-800 p-2 text-white shadow-xl"
                       />
                     </div>
                   </div>
@@ -186,7 +164,7 @@ export default function Contact() {
                         name="how-can-we-help"
                         aria-describedby="how-can-we-help-description"
                         rows={4}
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-grape-500 focus:ring-grape-500 sm:text-sm bg-zinc-600 p-2 text-white"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-grape-500 focus:ring-grape-500 sm:text-sm bg-neutral-800 p-2 text-white shadow-xl"
                         defaultValue={""}
                       />
                     </div>
@@ -266,7 +244,7 @@ export default function Contact() {
                         type="text"
                         name="how-did-you-hear-about-us"
                         id="how-did-you-hear-about-us"
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-grape-500 focus:ring-grape-500 sm:text-sm bg-zinc-600 p-2 text-white"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-grape-500 focus:ring-grape-500 sm:text-sm bg-neutral-800 p-2 text-white shadow-xl"
                       />
                     </div>
                   </div>
@@ -285,10 +263,10 @@ export default function Contact() {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-zinc-200">
+        <div className="bg-neutral-200">
           <div className="mx-auto max-w-md py-16 px-4 text-center sm:max-w-2xl sm:py-24 sm:px-6 lg:px-8 lg:py-32">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              <span className="block text-zinc-700">
+              <span className="block text-neutral-700">
                 Looking for a new career?
               </span>
               <span className="block mt-2 text-blue-800">We’re hiring.</span>

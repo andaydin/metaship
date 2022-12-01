@@ -113,7 +113,7 @@ const Header = () => {
     >
       <Popover
         className={`${
-          small ? "bg-zinc-900" : "bg-transparent"
+          small ? "bg-neutral-900" : "bg-transparent"
         } absolute w-full z-50 transition-all duration-500`}
       >
         <div className="flex items-center justify-between px-4 py-2 sm:px-6 md:justify-start md:space-x-10">
@@ -147,7 +147,7 @@ const Header = () => {
               >
                 Product
               </a>
-              <a href="#" className="text-base font-medium text-white ">
+              <a href="/about" className="text-base font-medium text-white ">
                 About
               </a>
 
@@ -228,7 +228,7 @@ const Header = () => {
             focus
             className="absolute inset-x-0 h-screen top-0 origin-top-right transform transition md:hidden"
           >
-            <div className="divide-y-2 divide-gray-50  bg-zinc-900 shadow-lg ring-1 ring-black ring-opacity-5">
+            <div className="divide-y-2 divide-gray-50  bg-neutral-900 shadow-lg ring-1 ring-black ring-opacity-5">
               <div className="px-5 pt-5 pb-6">
                 <div className="flex items-center justify-between">
                   <div>

@@ -96,7 +96,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-zinc-900" aria-labelledby="footer-heading">
+    <footer className="bg-neutral-900" aria-labelledby="footer-heading">
       <div className="mx-auto  py-12 px-4  sm:px-6 sm:pt-16 lg:max-w-8xl lg:px-8 lg:pt-24 lg:pb-16">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">

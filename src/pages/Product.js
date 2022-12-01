@@ -58,7 +58,7 @@ export default function Product() {
           <h1 className="mt-60 text-2xl lg:text-4xl text-right font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             Product Replacement
           </h1>
-          <p className="mt-6 ml-auto mr-0 text-right max-w-3xl text-md lg:text-xl text-indigo-100">
+          <p className="mt-6 ml-auto mr-0 text-right max-w-3xl text-sm lg:text-xl text-indigo-100">
             You want to learn, understand and experience the complex systems of
             life and operations onboard. MetaShip gives you responsibility, and
             competence, and more than that it gives you the courage to make
@@ -67,7 +67,7 @@ export default function Product() {
         </div>
       </div>
 
-      <div className="bg-zinc-900 pt-12 sm:pt-16">
+      <div className="bg-neutral-900 pt-12 sm:pt-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl">
@@ -79,13 +79,13 @@ export default function Product() {
             </p>
           </div>
         </div>
-        <div className="mt-10 bg-zinc-900 pb-12 sm:pb-16">
+        <div className="mt-10 bg-neutral-900 pb-12 sm:pb-16">
           <div className="relative">
-            <div className="absolute inset-0 h-1/2 bg-zinc-900" />
+            <div className="absolute inset-0 h-1/2 bg-neutral-900" />
             <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="mx-auto max-w-4xl">
                 <dl className="sm:grid sm:grid-cols-3">
-                  <div className="flex bg-zinc-800 mx-5 my-3 flex-col border-b border-gray-800 p-6 text-center sm:border-0 sm:border-r shadow-lg rounded-lg">
+                  <div className="flex bg-neutral-800 mx-5 my-3 flex-col border-b border-gray-800 p-6 text-center sm:border-0 sm:border-r shadow-lg rounded-lg">
                     <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-300">
                       Days Playtime
                     </dt>
@@ -93,7 +93,7 @@ export default function Product() {
                       100+
                     </dd>
                   </div>
-                  <div className="flex bg-zinc-800  mx-5 my-3 flex-col border-t border-b border-gray-800 p-6 text-center sm:border-0 sm:border-l sm:border-r shadow-lg rounded-lg">
+                  <div className="flex bg-neutral-800  mx-5 my-3 flex-col border-t border-b border-gray-800 p-6 text-center sm:border-0 sm:border-l sm:border-r shadow-lg rounded-lg">
                     <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-300">
                       Miles Navigation
                     </dt>
@@ -101,7 +101,7 @@ export default function Product() {
                       30.000+
                     </dd>
                   </div>
-                  <div className="flex bg-zinc-800  mx-5 my-3 flex-col border-t border-gray-800 p-6 text-center sm:border-0 sm:border-l shadow-lg rounded-lg">
+                  <div className="flex bg-neutral-800  mx-5 my-3 flex-col border-t border-gray-800 p-6 text-center sm:border-0 sm:border-l shadow-lg rounded-lg">
                     <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-300">
                       Customers
                     </dt>
@@ -116,9 +116,9 @@ export default function Product() {
         </div>
       </div>
 
-      <div className="flex overflow-hidden bg-zinc-900">
+      <div className="flex overflow-hidden bg-neutral-900">
         <div className="mx-auto max-w-8xl flex items-center">
-          <div className="relative z-10 bg-zinc-900 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
+          <div className="relative z-10 bg-neutral-900 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
             <main className="mx-auto mt-10 max-w-8xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
                 <h1 className="text-4xl font-bold tracking-normal text-gray-900 sm:text-5xl md:text-6xl">
@@ -149,7 +149,7 @@ export default function Product() {
         </div>
       </div>
 
-      <div className="relative bg-zinc-900 py-24 sm:py-32 lg:py-16">
+      <div className="relative bg-neutral-900 py-24 sm:py-32 lg:py-16">
         <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
           <h2 className="text-lg font-semibold text-blue-600">OPPORTUNITIES</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl">
@@ -162,17 +162,17 @@ export default function Product() {
             <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
               {features.map((feature) => (
                 <div key={feature.name} className="pt-6">
-                  <div className="h-72 flow-root rounded-lg bg-gray-50 px-6 pb-8 bg-zinc-800">
+                  <div className="h-72 flow-root rounded-lg  px-6 pb-8 bg-neutral-800">
                     <div className="-mt-6">
                       <div>
-                        <span className="inline-flex items-center justify-center rounded-xl bg-blue-500 p-3 shadow-lg">
+                        <span className="inline-flex items-center justify-center rounded-xl bg-blue-600 hover:bg-blue-700 p-3 shadow-lg">
                           <feature.icon
                             className="h-8 w-8 text-white"
                             aria-hidden="true"
                           />
                         </span>
                       </div>
-                      <h3 className="mt-8 text-lg font-semibold leading-8 tracking-normal text-zinc-300">
+                      <h3 className="mt-8 text-lg font-semibold leading-8 tracking-normal text-neutral-300">
                         {feature.name}
                       </h3>
                       <p className="mt-5 text-base leading-7 text-gray-400">
